@@ -9,6 +9,7 @@ export default function HomeScreen() {
     <Box
       styleSheet={{
         fontFamily: theme.typography.fontFamily,
+        backgroundColor: theme.colors.primary.x200,
       }}
     >
       <Background />

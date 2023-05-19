@@ -1,16 +1,29 @@
 import { BaseComponent } from "@src/theme/BaseComponent";
-import { StyleSheet } from "@src/theme/StyleSheet";
+import { useTheme } from "@src/theme/ThemeProvider";
 
 interface InputProps {
   type?: string;
-  styleSheet?: StyleSheet;
+  placeholder?: string;
 }
-export default function Input({type, ...props}: InputProps) {
-  <BaseComponent
+export default function Input({type, placeholder, ...props}: InputProps) {
+  const theme = useTheme();
+
+  return (
+    <BaseComponent
       as="input"
       type={type}
+      placeholder={placeholder}
+      styleSheet={{
+        backgroundColor: theme.colors.neutral.x000,
+        boxShadow: '10px 10px 30px rgba(0, 0, 0, 0.06)',
+        width: '100%',
+        border: 'none',
+        fontSize: '24px',
+        padding: '24px',
+      }}
       {...props}
     />
+  )
 }
 
 Input.defaultProps = {
