@@ -1,12 +1,14 @@
 import Box from "@src/components/Box";
 import Image from "@src/components/Image";
+import { useTheme } from "@src/theme/ThemeProvider";
 
 export default function Background() {
+  const theme = useTheme();
   return (
     <Box
       tag="header"
       styleSheet={{
-        backgroundColor: '#6278f7',
+        backgroundColor: theme.colors.primary.x050,
         textAlign: 'center',
       }}
     >
