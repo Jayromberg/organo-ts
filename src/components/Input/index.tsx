@@ -4,8 +4,9 @@ import { useTheme } from "@src/theme/ThemeProvider";
 interface InputProps {
   type?: string;
   placeholder?: string;
+  id?: string;
 }
-export default function Input({type, placeholder, ...props}: InputProps) {
+export default function Input({type, placeholder, id, ...props}: InputProps) {
   const theme = useTheme();
 
   return (
@@ -13,6 +14,7 @@ export default function Input({type, placeholder, ...props}: InputProps) {
       as="input"
       type={type}
       placeholder={placeholder}
+      id={id}
       styleSheet={{
         backgroundColor: theme.colors.neutral.x000,
         boxShadow: '10px 10px 30px rgba(0, 0, 0, 0.06)',
