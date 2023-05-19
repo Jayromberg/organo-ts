@@ -10,7 +10,13 @@ export default function Background() {
         textAlign: 'center',
       }}
     >
-      <Image src="/images/banner.png" alt="banner principal do site" />
+      <Image
+        styleSheet={{
+          maxWidth: '100%',
+        }}
+        src="/images/banner.png" 
+        alt="banner principal do site"
+      />
     </Box>
   );
 }
