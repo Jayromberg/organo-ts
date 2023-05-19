@@ -3,7 +3,7 @@ import { BaseComponent } from "@src/theme/BaseComponent";
 import { StyleSheet } from "@src/theme/StyleSheet";
 
 interface BoxProps {
-  tag: 'main' | 'div' | 'article' | 'section' | 'ul';
+  tag: 'main'| 'header' | 'div' | 'article' | 'section' | 'ul';
   children?: React.ReactNode;
   styleSheet?: StyleSheet;
 }
