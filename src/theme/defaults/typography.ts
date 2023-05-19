@@ -1,5 +1,6 @@
 export const typography = {
-  fontFamily: '"Open Sans", sans-serif',
+  fontFamily: "'Montserrat', sans-serif",
+  // fontFamily: "'Prata', serif",
   variants: {
     display1: {
       letterSpacing: {

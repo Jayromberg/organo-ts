@@ -12,7 +12,9 @@ export default function HomeScreen() {
       }}
     >
       <Background />
-      <Feed />
+      <Feed>
+        <Feed.Form />
+      </Feed>
     </Box>
   )
 }
