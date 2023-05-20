@@ -1,8 +1,8 @@
 import React from 'react';
 import Box from "@src/components/Box";
 import Input from '@src/components/Input';
-import { useTheme } from '@src/theme/ThemeProvider';
 import Label from '@src/components/Label';
+import Text from '@src/components/Text';
 
 interface FeedProps {
   children: React.ReactNode;
@@ -16,13 +16,14 @@ export default function Feed({children}: FeedProps) {
 }
 
 Feed.Form = () => {
-  const theme = useTheme();
   return (
     <Box
+      tag='section'
       styleSheet={{
         margin: '24px 0',
       }}
     >
+      <Text tag='h2'>Preencha os dados para criar o card do colaborador:</Text>
       <Label htmlFor="input-name">Nome</Label>
       <Input
         id="input-name"
