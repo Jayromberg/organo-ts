@@ -19,9 +19,6 @@ Feed.Form = () => {
   return (
     <Box
       tag='section'
-      styleSheet={{
-        margin: '24px 0',
-      }}
     >
       <Text tag='h2'>Preencha os dados para criar o card do colaborador:</Text>
       <Label htmlFor="input-name">Nome</Label>

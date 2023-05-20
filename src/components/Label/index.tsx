@@ -1,20 +1,18 @@
 import React from "react";
 import { BaseComponent } from "@src/theme/BaseComponent";
+import { StyleSheet } from "@src/theme/StyleSheet";
 
 interface LabelProps {
   children: React.ReactNode
   htmlFor: string
+  styleSheet?: StyleSheet
 }
-export default function Label({children, htmlFor}: LabelProps) {
+export default function Label({children, htmlFor, styleSheet}: LabelProps) {
   return (
     <BaseComponent
       as="label"
       htmlFor={htmlFor}
-      styleSheet={{
-        display: 'block',
-        marginBottom: '8px',
-        fontSize: '24px',
-      }}
+      styleSheet={styleSheet}
     >
       {children}
     </BaseComponent>
