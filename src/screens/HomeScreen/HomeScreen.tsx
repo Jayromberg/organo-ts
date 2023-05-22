@@ -23,7 +23,15 @@ export default function HomeScreen() {
         }}
       >
         <Form>
-          <Text tag='h2' variant="heading2">Preencha os dados para criar o card do colaborador:</Text>
+          <Text 
+            tag='h2' 
+            variant="heading2"
+            styleSheet={{
+              fontFamily: "'Prata', serif",
+            }}
+          >
+            Preencha os dados para criar o card do colaborador:
+          </Text>
           <Form.Input labelName="Nome" placeholder="Digite seu nome" />
           <Form.Input labelName="Cargo" placeholder="Digite seu cargo" />
           <Form.Input labelName="Imagem" placeholder="Digite o endereço da imagem" />
