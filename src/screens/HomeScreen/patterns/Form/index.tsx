@@ -4,6 +4,7 @@ import { useTheme } from '@src/theme/ThemeProvider';
 import Box from "@src/components/Box";
 import Input from '@src/components/Input';
 import Label from '@src/components/Label';
+import Text from '@src/components/Text';
 
 interface FormProps {
   children: React.ReactNode;
@@ -46,7 +47,11 @@ Form.Input = ({labelName, placeholder}: FormInputProps) => {
           fontSize: '24px',
         }}
       >
-        {labelName}
+        <Text
+          variant="heading4"
+        >
+          {labelName}
+        </Text>
       </Label>
       <Input
         id={id}
